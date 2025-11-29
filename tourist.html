@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Tourist Attractions in Zamboanga City</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="tourist.css">
+    
+    <style>
+        body{
+    margin-top: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "nunito", sans-serif;
+    background-image: url("https://raw.githubusercontent.com/kmreyes2029/Lingat-Reyes-Samson_SA/refs/heads/main/unnamed.webp");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    max-width: 100vw;
+    width: 100vw;
+}
+.maincontent{
+    width:85%;
+    margin-left:auto;
+    margin-right:auto;
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+header{
+    background-color:#004ea8;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    height: 100px;
+    width:85%;
+    border-radius: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 100;
+    transition: height 0.2s, width 0.2s;
+    max-width: 100vw;
+}
+
+.rightside{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+.leftside{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    height: 100%;
+    border-bottom: hotpink transparent 5px;
+    transition: all 0.4s ease;
+}
+.leftside img{
+    width:100px;
+    height:100px;
+    max-width:100%;
+}
+.leftside{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    height: 100%;
+}
+.leftside div:first-of-type{
+    background-color:#1174e9;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 0px;
+    padding-right: 0px;
+    transition: transform 0.4s ease;    box-sizing: border-box; 
+    min-width: 0;
+    max-width: 100%;
+}
+.leftside div:nth-of-type(2){
+    background-color:#1ec9c3;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 0px;
+    padding-right: 0px;
+    transition: transform 0.4s ease;
+    box-sizing: border-box;
+    min-width: 0;
+    max-width: 100%;
+}
+.leftside div:nth-of-type(3){
+    background-color: #d1e752;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 0px;
+    padding-right: 0px;
+    transition: transform 0.4s ease;
+    box-sizing: border-box;
+    min-width: 0;
+    max-width: 100%;
+}
+.leftside div:nth-of-type(4){
+    background-color: #ffac5b;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 0px;
+    padding-right: 0px;
+    transition: transform 0.4s ease;
+    box-sizing: border-box;
+    min-width: 0;
+    max-width: 100%;
+}
+.leftside div:nth-of-type(5){
+    background-color: #9c6cdf;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 0px;
+    padding-right: 0px;
+    transition: transform 0.4s ease;
+    box-sizing: border-box;
+    min-width: 0;
+    max-width: 100%;
+}
+.leftside div:last-of-type{
+    background-color: #fb7171;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 0px;
+    padding-right: 0px;
+    transition: transform 0.4s ease;
+    box-sizing: border-box;
+    min-width: 0;
+    max-width: 100%;
+}
+.leftside div:hover {
+    box-shadow:0 0 24px white;
+    box-sizing: border-box;
+    transform: scale(1.05);
+    min-width: 0;
+    max-width: 100%;
+}
+header div{
+    display:flex;
+    align-items:center;
+    margin:0px; 
+    height: 100%;
+    overflow: visible;
+}
+header div a{
+    color:white;
+    text-decoration:none;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+header img{
+    height:24px;
+    max-width: 100%;
+}
+.gridcont {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 95vw;
+    max-width: 1000px;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 24px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    justify-items: center; 
+    align-items: stretch;
+    color: whitesmoke;
+}
+
+.gridcont div {
+    border-radius: 25px;
+    border: white solid 2px;
+    padding: 24px;
+    transition: all 0.4s ease;
+    background-color: white;
+    box-sizing: border-box;
+    width: 100%;
+    min-width: 0;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+gridcont h1 {
+    font-size: 300%;
+    font-family: "nunito", sans-serif;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+}
+.gridcont p {
+    font-family: "nunito", sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    text-align: center;
+}
+.gridcont div div {
+    opacity: 0.75;
+    background-color: gray;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.gridcont div div p {
+    opacity: 1;
+}
+
+.pink {
+    background-image: url('https://i2.wp.com/www.projectlupad.com/wp-content/uploads/2018/01/Pink-Beach-Sand-Island-in-the-Philippines-Project-LUPAD.jpg?fit=1334%2C695&ssl=1');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+.vinta {
+    background-image: url('https://scontent.fcrk2-2.fna.fbcdn.net/v/t39.30808-6/557568071_1377533963738752_1890062740852333972_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=833d8c&_nc_ohc=03vxg8d2x-IQ7kNvwH056wT&_nc_oc=Adnocz-Jowad2XTb4G6rNgkwewBVp5Uhq23oSr7wQSjSwZOT8_2qjwL8tQjhqVQQMIc&_nc_zt=23&_nc_ht=scontent.fcrk2-2.fna&_nc_gid=mwGVQKes_U51TXr2FYklJg&oh=00_Afjqq2mx1q-Y7SBubItU3i0bmFScGAdgZWWe3xNiJX4yRA&oe=692D7533');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+.mosk {
+    background-image: url('https://scontent.fcrk2-3.fna.fbcdn.net/v/t39.30808-6/557737402_1377528080406007_430230497857169389_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=833d8c&_nc_ohc=zUzoK7k7Zh4Q7kNvwH1hJgr&_nc_oc=AdlJxFzajz2snOrpxQmTT4TJ0OMYBenz0RqFiJwncdNAnes9vO7KoAaMUp8CAOZkQ6g&_nc_zt=23&_nc_ht=scontent.fcrk2-3.fna&_nc_gid=fuvlMPXdAhUHH7wJYPRV8w&oh=00_Afh6_U_DBGMuzn8qPLe5fcQVinZLKt5tnZA7f_9S_7bZIQ&oe=692D8998');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+.bird {
+    background-image: url('https://scontent.fcrk1-3.fna.fbcdn.net/v/t39.30808-6/475223450_122173434284109796_6859494739809123258_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=833d8c&_nc_ohc=Rdy9JXr_vhYQ7kNvwExox7B&_nc_oc=AdkXZr6ONcueWjM9ovxXVeU-Rn_TJab0NNRitRH2oIYoRsjItvTz2v0W1YCfT74sLbY&_nc_zt=23&_nc_ht=scontent.fcrk1-3.fna&_nc_gid=78gqJF-NhNDpy3znncjVvg&oh=00_Afg6xwzT3Bb6eBWZ7oT-4R1Gyfn7Kb4EkMMERJv765KOlA&oe=692E4D4B');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+.fort {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Fort_Pilar_Altar_of_the_Shrine.jpg/960px-Fort_Pilar_Altar_of_the_Shrine.jpg?20120904110020');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+.park {
+    background-image: url('https://scontent.fcrk1-2.fna.fbcdn.net/v/t39.30808-6/486531482_1060220492809593_948153393823759068_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=108&ccb=1-7&_nc_sid=833d8c&_nc_ohc=X80K8X68dAoQ7kNvwGp-_a1&_nc_oc=AdknCmy4HJAv2kcPYiXdqvt3pmgfgP_pjJxyFH1K3wtuoo6aD7ZAlY1AShwbtw5nidk&_nc_zt=23&_nc_ht=scontent.fcrk1-2.fna&_nc_gid=EzcgPQTrSCj-agrazWuRHQ&oh=00_AfiB2PHYhzpTm_KncJLOkIutFvdGoO711mNTyhzGoJrLcw&oe=692FAE8C');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+.gridcont {
+    overflow: visible;
+    position: relative;
+    max-width: 100vw;
+}
+.gridcont div {
+    z-index: 1;
+    transform-origin: center;
+}
+.gridcont div:hover,
+.gridcont div:focus-visible {
+    transform: scale(1.02);
+    z-index: 2;
+}
+
+.gridcont .pink:hover {
+    box-shadow: 0 0 12px hotpink;
+    color: white;
+    border-color: hotpink;
+}
+.gridcont .pink:hover .pinky {
+    background-color: hotpink;
+    box-shadow: 0 0 24px hotpink;
+    color: white;
+    opacity: 1;
+    border-color: hotpink;
+    transform: scale(1.02);
+}
+
+.gridcont .vinta:hover {
+    box-shadow: 0 0 24px #d66551;
+    color: white;
+    border-color: #d66551;
+}
+.gridcont .vinta:hover .vintay {
+    opacity: 1;
+    background-color: #d66551;
+    box-shadow: 0 0 24px #d66551;
+    color: white;
+    border-color: #d66551;
+    transform: scale(1.02);
+}
+
+.gridcont .mosk:hover {
+    box-shadow: 0 0 12px #f2b407;
+    color: white;
+    border-color: #f2b407;
+}
+.gridcont .mosk:hover .mosky {
+    opacity: 1;
+    background-color: #f2b407;
+    box-shadow: 0 0 12px #f2b407;
+    color: white;
+    border-color: #f2b407;
+    transform: scale(1.02);
+}
+.gridcont .bird:hover {
+    box-shadow: 0 0 12px #6b270d;
+    color: white;
+    border-color: #6b270d;
+}
+.gridcont .bird:hover .birdy {
+    opacity: 1;
+    background-color: #6b270d;
+    box-shadow: 0 0 12px #6b270d;
+    color: white;
+    border-color: #6b270d;
+    transform: scale(1.02);
+}
+.gridcont .fort:hover {
+    box-shadow: 0 0 12px #ff8c5e;
+    color: white;
+    border-color: #ff8c5e;
+}
+.gridcont .fort:hover .forty {
+    opacity: 1;
+    background-color: #ff8c5e;
+    box-shadow: 0 0 12px #ff8c5e;
+    color: white;
+    border-color: #ff8c5e;
+    transform: scale(1.02);
+}
+.gridcont .park:hover {
+    box-shadow: 0 0 12px #fc5e5e;
+    color: white;
+    border-color: #fc5e5e;
+}
+.gridcont .park:hover .parky {
+    opacity: 1;
+    background-color: #fc5e5e;
+    box-shadow: 0 0 12px #fc5e5e;
+    color: white;
+    border-color: #fc5e5e;
+    transform: scale(1.02);
+}
+
+@media (max-width: 900px) {
+    .gridcont {
+        width: 98vw;
+        max-width: none;
+        gap: 16px;
+    }
+    .gridcont div {
+        padding: 16px;
+    }
+    header {
+        width: 98vw;
+        max-width: 98vw;
+    }
+}
+
+@media (max-width: 768px) {
+    .gridcont {
+        grid-template-columns: 1fr;
+        width: 99vw;
+        gap: 12px;
+        margin-left: auto;
+        margin-right: auto;
+        justify-items: center;
+        max-width: 99vw;
+    }
+    .gridcont div {
+        max-width: 550px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        box-sizing: border-box;
+        max-width: 99vw;
+    }
+    .maincontent,
+    header {
+        width: 99vw;
+        max-width: 99vw;
+        min-width: 0;
+    }
+    header {
+        height: auto;
+        min-height: 72px;
+        border-radius: 24px;
+        flex-direction: column;
+        align-items: stretch;
+        padding: 0;
+        gap:0;
+    }
+    .header-left,
+    .header-right {
+        width: 100%;
+        height: 48px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow-x: hidden;
+    }
+    .leftside img {
+        width: 72px;
+        height: 72px;
+    }
+    header div {
+        height: 100%;
+        min-width: 0;
+        overflow: visible;
+    }
+    header div a {
+        padding-left: 16px;
+        padding-right: 16px;
+        min-width: 0;
+    }
+}
+
+@media (max-width: 680px) {
+    .gridcont {
+        width: 98vw;
+        gap: 8px;
+        justify-items: center;
+        max-width: 98vw;
+    }
+    .gridcont div {
+        padding: 10px;
+        max-width: 98vw;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        box-sizing: border-box;
+    }
+    .maincontent,
+    header {
+        width: 98vw;
+        min-width: 0;
+        max-width: 98vw;
+    }
+    header {
+        min-height: 60px;
+        border-radius: 18px;
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .header-left,
+    .header-right {
+        width: 100%;
+        height: 40px;
+    }
+    .leftside img {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+@media (max-width: 640px) {
+    .gridcont {
+        gap: 6px;
+        width: 98vw;
+        margin-left:auto;
+        margin-right:auto;
+        justify-items: center;
+        max-width: 98vw;
+    }
+    .gridcont div {
+        padding: 8px;
+        max-width: 98vw;    
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        box-sizing: border-box;
+    }
+    header {
+        min-height: 48px;
+        border-radius: 12px;
+        width: 99vw;
+        max-width: 99vw;
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .header-left,
+    .header-right {
+        width: 100%;
+        height: 36px;
+    }
+    .leftside img {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+    </style>
+
+</head>
+
+
+
+
+
+
+<body>
+    <header>
+        <div class="leftside">
+            <div><img src="https://scontent.fcrk4-1.fna.fbcdn.net/v/t39.30808-6/529850750_1210272784445905_3477972520418287456_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=833d8c&_nc_ohc=h_W_esDMkQ8Q7kNvwFeTXFu&_nc_oc=AdkBdvebgJEr5tnG-XaLCUhupZe30OfQIyVWz4wpT7EE9Fch5tP5fseg4Mw5mWBDfYM&_nc_zt=23&_nc_ht=scontent.fcrk4-1.fna&_nc_gid=IEqYa2Pqa1aPWnoelQwBqg&oh=00_Afj6Hq2aAE73dm3aKazG1nCx9AAHdDuOdCqyCG5zlY6hAQ&oe=692D6DB0" alt="colorful zamboanga yes"> </div>    
+            <div>
+                <a href="home.html">Home</a>
+            </div>
+            <div>
+                <a href="demographics.html">Demographics</a>
+            </div>
+            <div>
+                <a href="food.html">Food</a>
+            </div>
+            <div>
+                <a href="tourist.html">Attractions</a>
+            </div>
+        </div>
+        <div class="rightside">
+            <div>
+                <a href="about.html">About the Authors</a>
+            </div>
+        </div>
+    </header>
+    <div class="gridcont">
+        <div class="pink">
+            <h1>Pink Sand Beach</h1>
+            <br><div class="pinky">
+            <p>The Philippines is difficult to top when it comes to stunning beaches. Tourists and
+                locals alike never run out of reasons to explore what our country has to offer, and 
+                National Geographic seems to be on the same boat. In fact, in the magazine's recently
+                published 21 Best Beaches in the World list,Sta. Cruz Island in Zamboanga made the cut.
+                Dubbed aptly as the Pink Beach, Santa Cruz Island is covered in beautiful pink sand that
+                 results from all the crushed red organ pipe coral that washes ashore.</p>
+        </div></div>
+
+        <div class="vinta">
+            <h1>Vinta Boat Rowing</h1>
+            <br><div class="vintay">
+            <p>In addition to nature-related activities, Great Santa Cruz Island also offers a unique cultural experience
+                with Vinta Rowing. With bright sails that will certainly catch your eye, Vintas represents the vibrant
+                cultural history of Zamboanga.</p>
+        </div></div>
+        
+        <div class="mosk">
+            <h1>Vinta Boat Rowing</h1>
+            <br><div class="mosky">
+            <p>In addition to nature-related activities, Great Santa Cruz Island also offers a unique cultural experience
+                with Vinta Rowing. With bright sails that will certainly catch your eye, Vintas represents the vibrant
+                cultural history of Zamboanga.</p>
+        </div></div>
+
+        <div class="bird">
+            <h1>ZSCMST Bird Sanctuary</h1>
+            <br><div class="birdy">
+            <p>If you’re in Zamboanga and are interested in bird watching, this is the place for you! Maintained by the Zamboanga State College of Marine Sciences and Technology, the ZSCMST Bird Sanctuary serves as a haven for various bird species in the area. 
+The ZSCMST Bird Sanctuary is home to 53 identified bird species. These bird species include those that are endemic to the area, as well as some migratory bird species. 
+Offering a serene and tranquil environment for birds and bird watchers, the ZSCMST Bird Sanctuary is a must-see destination for bird enthusiasts. </p>
+        </div></div>
+
+        <div class="fort">
+            <h1>Fort Pilar</h1>
+            <br><div class="forty">
+            <p>Originally built in 1635 as a defense structure for the area, Fort Pillar is a spot full of historical significance. 
+Nowadays, Fort Pillar is managed by the National Museum of the Philippines. It is a prime spot for different cultural activities and exhibitions in the area. 
+Given its proximity to restaurants and other tourist hubs near the area, Fort Pillar is an ideal spot for families and tourists who want to unwind.</p>
+        </div></div>
+
+        <div class="park">
+            <h1>Paseo Del Mar</h1>
+            <br><div class="parky">
+            <p> Operating Hours: 6 AM to 12 MN; accessible via jeep or tricycle
+
+                For tourists who want to experience what the city of Zamboanga has to offer, there are many other tourist spots in Zamboanga that appeal to the metropolitan lifestyle. 
+                
+                Located near Fort Pillar, Paseo del Mar features various restaurants, cafes, and entertainment hubs.
+                
+                Paseo del Mar also has 24-hour security, ensuring the safety of locals and tourists in the area. There are also hotels nearby for tourists who want to stay near the area. 
+                
+                Often compared favorably to Manila Bay, tourists from the city are sure to feel right at home in Paseo del Mar. 
+        </div></div>
+    </div>
+</body>
+</html>
